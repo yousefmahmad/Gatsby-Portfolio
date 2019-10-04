@@ -20,7 +20,7 @@ import full03 from '../assets/images/fulls/03.jpg'
 // import full06 from '../assets/images/fulls/06.jpg'
 
 const DEFAULT_IMAGES = [
-    { id: '1', source: full01, thumbnail: thumb01, caption: 'Tower of Hanoi', description: 'A centuries old game remade here using JavaScript, HTML and CSS.'},
+    { id: '1', source: full01, thumbnail: thumb01, caption: 'Tower of Hanoi', description: 'A centuries old game remade here using JavaScript, HTML and CSS.', href: "https://yousefmahmad.github.io/towerofhanoi/"},
     { id: '2', source: full02, thumbnail: thumb02, caption: 'Crypto', description: 'An API built from scratch to give the user all the different cryptocurrencies and related information. Built using MongoDB, Express.js, Node.js, Heroku, Mongo Atlas'},
     { id: '3', source: full03, thumbnail: thumb03, caption: 'Fiji Front End Design', description: 'A beautiful front end design, collabratively developed using CSS, HTML and JavaScript.'},
     // { id: '4', source: full04, thumbnail: thumb04, caption: 'Photo 4', description: 'Lorem ipsum dolor sit amet nisl sed nullam feugiat.'},
