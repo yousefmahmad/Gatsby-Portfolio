@@ -47,10 +47,12 @@ exports.setMatchPaths = setMatchPaths;
 const findMatchPath = rawPathname => {
   const trimmedPathname = cleanPath(rawPathname);
 
-  for (const {
-    matchPath,
-    path
-  } of matchPaths) {
+  for (const _ref of matchPaths) {
+    const {
+      matchPath,
+      path
+    } = _ref;
+
     if ((0, _utils.match)(matchPath, trimmedPathname)) {
       return (0, _normalizePagePath.default)(path);
     }

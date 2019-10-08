@@ -15,14 +15,35 @@ import thumb03 from '../assets/images/thumbs/03.jpg'
 import full01 from '../assets/images/fulls/01.jpg'
 import full02 from '../assets/images/fulls/02.jpg'
 import full03 from '../assets/images/fulls/03.jpg'
+import { url } from 'inspector'
 // import full04 from '../assets/images/fulls/04.jpg'
 // import full05 from '../assets/images/fulls/05.jpg'
 // import full06 from '../assets/images/fulls/06.jpg'
 
 const DEFAULT_IMAGES = [
-    { id: '1', source: full01, thumbnail: thumb01, caption: 'Tower of Hanoi', description: 'A centuries old game remade here using JavaScript, HTML and CSS.', href: "https://yousefmahmad.github.io/towerofhanoi/"},
-    { id: '2', source: full02, thumbnail: thumb02, caption: 'Crypto', description: 'An API built from scratch to give the user all the different cryptocurrencies and related information. Built using MongoDB, Express.js, Node.js, Heroku, Mongo Atlas'},
-    { id: '3', source: full03, thumbnail: thumb03, caption: 'Fiji Front End Design', description: 'A beautiful front end design, collabratively developed using CSS, HTML and JavaScript.'},
+    { 
+        id: '1',
+        source: full01, 
+        thumbnail: thumb01, 
+        caption: 'Tower of Hanoi', 
+        description: 'A centuries old game remade here using JavaScript, HTML and CSS.', 
+        
+        link: 'https://yousefmahmad.github.io/towerofhanoi/' 
+    },
+    {   
+        id: '2', 
+        source: full02, 
+        thumbnail: thumb02, 
+        caption: 'Crypto', 
+        description: 'An API built from scratch to give the user all the different cryptocurrencies and related information. Built using MongoDB, Express.js, Node.js, Heroku, Mongo Atlas', 
+        link: 'https://breek-crypto.herokuapp.com/'},
+    { 
+        id: '3', 
+        source: full03, 
+        thumbnail: thumb03, 
+        caption: 'Fiji Front End Design', 
+        description: 'A beautiful front end design, collabratively developed using CSS, HTML and JavaScript.', 
+        link: 'https://breek-crypto.herokuapp.com/api/coins'},
     // { id: '4', source: full04, thumbnail: thumb04, caption: 'Photo 4', description: 'Lorem ipsum dolor sit amet nisl sed nullam feugiat.'},
     // { id: '5', source: full05, thumbnail: thumb05, caption: 'Photo 5', description: 'Lorem ipsum dolor sit amet nisl sed nullam feugiat.'},
     // { id: '6', source: full06, thumbnail: thumb06, caption: 'Photo 6', description: 'Lorem ipsum dolor sit amet nisl sed nullam feugiat.'}
@@ -53,11 +74,12 @@ class HomeIndex extends React.Component {
                     <section id="two">
                         <h2>Recent Work</h2>
 
-                        <Gallery images={DEFAULT_IMAGES.map(({ id, source, thumbnail, caption, description }) => ({
+                        <Gallery images={DEFAULT_IMAGES.map(({ id, source, thumbnail, caption, description, link }) => ({
                             source,
                             thumbnail,
                             caption,
-                            description
+                            description,
+                            link
                         }))} />
 
                         {/* <ul className="actions">

@@ -13,7 +13,7 @@ class Header extends React.Component {
                         <strong>Engineer</strong><br/>
                         <br />
                         <br />
-                       <strong>Artist</strong> <br />
+                       <strong onClick="" >Artist</strong> <br />
                        <br />
                        <br />
                         <strong>Casual Chess Player</strong>
